@@ -1,0 +1,25 @@
+Package: BRFWRF
+Type: Package
+Title: Weighted Random Forest for Imbalanced Classification
+Version: 0.1.0
+Authors@R: c(person("Sizhang", "Lyu", email = "sl3536@cornell.edu", role = c("aut", "cre")))
+Description: Implements a Weighted Random Forest algorithm that incorporates class-dependent weights 
+    into the Gini splitting criterion and terminal node predictions. This approach aims to better handle 
+    class imbalance by penalizing misclassification of minority classes more heavily, leading to improved 
+    predictive performance on imbalanced datasets. Out-of-bag error estimates are provided to guide 
+    tuning of class weights.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 3.6.0)
+Imports:
+    stats,
+    utils,
+    dplyr
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
