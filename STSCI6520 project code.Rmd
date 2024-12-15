@@ -1,0 +1,447 @@
+---
+title: "Random Forests for Imblanced Datasets"
+author: "Sizhang Lyu, Zhe Huang"
+date: "2024-12-09"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Action
+
+- Generate synthetic data
+- Apply all the methods mentioned previously
+- Compare performances
+
+## Synthetic Data
+
+We will generate synthetic data on the following Scenarios: 
+
+- Different sizes of datasets
+- 
+
+## Code for Generating Synthetic Data
+
+```{r cars, Include = TRUE}
+generate_synthetic_data <- function(n, p, imbalance_ratio = 0.05, 
+                                    retain_all = FALSE, sparse = FALSE, 
+                                    n_clusters = 1, cluster_means = NULL, 
+                                    cluster_sds = NULL, seed = NULL,
+                                    samples_per_cluster = NULL) {
+  # n: Total number of observations
+  # p: Number of features
+  # imbalance_ratio: Proportion of minority class
+  # retain_all: If TRUE, multiple clusters in majority class
+  # sparse: If TRUE, generates a sparse dataset
+  # n_clusters: Number of clusters in majority class
+  # cluster_means: List of mean vectors for each cluster
+  # cluster_sds: List of standard deviation vectors for each cluster
+  # seed: For reproducibility
+  # samples_per_cluster: Vector specifying number of samples per cluster
+  
+  if (!is.null(seed)) set.seed(seed)
+  # Determine the number of minority and majority classes
+  n_minority <- round(n * imbalance_ratio)
+  n_majority <- n - n_minority
+  X_majority <- NULL
+  if (retain_all) {
+    # Generate multiple clusters for majority class
+    if (is.null(n_clusters) || n_clusters < 1) {
+      stop("For retain_all = TRUE, n_clusters must be >= 1")
+    }
+    if (is.null(cluster_means)) {
+      # Default: randomly generate cluster means
+      cluster_means <- replicate(n_clusters, rnorm(p, mean = 0, sd = 1), 
+                                 simplify = FALSE)
+    }
+    if (is.null(cluster_sds)) {
+      # Default: standard deviation of 1 for all clusters
+      cluster_sds <- replicate(n_clusters, rep(1, p), simplify = FALSE)
+    }
+    if (is.null(samples_per_cluster)) {
+      # Default: assign roughly equal number of samples to each cluster
+      samples_per_cluster <- rep(floor(n_majority / n_clusters), n_clusters)
+      remainder <- n_majority %% n_clusters
+      if (remainder > 0) {
+        samples_per_cluster[1:remainder] <- samples_per_cluster[1:remainder] + 1
+      }
+    } else {
+      # Validate samples_per_cluster
+      if (length(samples_per_cluster) != n_clusters) {
+        stop("Length of samples_per_cluster must equal n_clusters")
+      }
+      if (sum(samples_per_cluster) != n_majority) {
+        stop("Sum of samples_per_cluster must 
+             equal the number of majority samples")
+      }
+    }
+    # Generate data for each cluster
+    for (i in 1:n_clusters) {
+      current_n <- samples_per_cluster[i]
+      if (sparse) {
+        # Sparse data: Poisson with low lambda
+        cluster_data <- matrix(rpois(current_n * p, lambda = 0.2), 
+                               nrow = current_n, ncol = p)
+      } else {
+        # Non-sparse data: multivariate normal
+        # Generate each feature with specified mean and sd
+        cluster_data <- mapply(function(mean, sd) {
+          rnorm(current_n, mean = mean, sd = sd)
+        }, mean = cluster_means[[i]], sd = cluster_sds[[i]])
+        if (p == 1) {
+          cluster_data <- matrix(cluster_data, ncol = 1)
+        } else {
+          cluster_data <- as.matrix(cluster_data)
+        }
+      }
+      X_majority <- rbind(X_majority, cluster_data)
+    }
+  } else {
+    # Single data-generating process for majority class
+    if (sparse) {
+      X_majority <- matrix(rpois(n_majority * p, lambda = 0.2), 
+                           nrow = n_majority, ncol = p)
+    } else {
+      X_majority <- matrix(rnorm(n_majority * p, mean = 0, sd = 1), 
+                           nrow = n_majority, ncol = p)
+    }
+  }
+  # Generate minority class data
+  if (sparse) {
+    X_minority <- matrix(rpois(n_minority * p, lambda = 0.5), 
+                         nrow = n_minority, ncol = p)
+  } else {
+    X_minority <- matrix(rnorm(n_minority * p, mean = 3, sd = 1), 
+                         nrow = n_minority, ncol = p)
+  }
+  X <- rbind(X_majority, X_minority)
+  y <- factor(c(rep(0, n_majority), rep(1, n_minority))) # 0 Majority, 1 Minority
+  data <- data.frame(X)
+  data$Class <- y
+  return(data)
+}
+```
+
+```{r eval=FALSE, include=FALSE}
+library(dplyr)
+
+calculate_samples_per_cluster <- function(n_majority, n_clusters) {
+  if (n_clusters != 3) {
+    stop("This function is designed for n_clusters = 3")
+  }
+  proportions <- c(0.8, 0.1, 0.1)
+  samples_per_cluster <- floor(n_majority * proportions)
+  remainder <- n_majority - sum(samples_per_cluster)
+  # Distribute the remainder to the first few clusters
+  if (remainder > 0) {
+    samples_per_cluster[1:remainder] <- samples_per_cluster[1:remainder] + 1
+  }
+  return(samples_per_cluster)
+}
+
+dataset_sizes <- c(500, 1000, 5000)  # Small, Medium, Large
+imbalance_ratios <- c(0.05, 0.20, 0.4) # High, Moderate, Low imbalance
+p <- 20 # Number of features
+n_clusters <- 3 # Number of clusters in majority class for retention scenarios
+# Define cluster means and sds for consistency
+set.seed(123) # For reproducibility
+cluster_means_list <- list(c(rep(0, p)), c(rep(3, p)), c(rep(-3, p)))
+cluster_sds_list <- list(rep(1, p), rep(1, p), rep(1, p))
+# Initialize main list to store all datasets
+all_datasets <- list()
+# Generate non-sparse, non-retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    dataset_name <- paste0("Data_n", size, "_imbalance", imbalance*100, "perc")
+    all_datasets[[dataset_name]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = FALSE,
+      sparse = FALSE, seed = 123)
+  }
+}
+# Generate sparse, non-retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    dataset_name <- paste0("SparseData_n", size, "_imbalance", 
+                           imbalance*100, "perc")
+    all_datasets[[dataset_name]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = FALSE,
+      sparse = TRUE, seed = 123)
+  }
+}
+# Generate retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    n_majority <- size - round(size * imbalance)
+    samples_per_cluster <- calculate_samples_per_cluster(n_majority, n_clusters)
+    dataset_name <- paste0("RetentionData_n", size, 
+                           "_imbalance", imbalance*100, "perc",
+                           "_clusters", n_clusters)
+    all_datasets[[dataset_name]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = TRUE,
+      sparse = FALSE, n_clusters = n_clusters, cluster_means = cluster_means_list,
+      cluster_sds = cluster_sds_list, samples_per_cluster = samples_per_cluster,
+      seed = 123)
+  }
+}
+# Generate sparse retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    n_majority <- size - round(size * imbalance)
+    samples_per_cluster <- calculate_samples_per_cluster(n_majority, n_clusters)
+    dataset_name <- paste0("SparseRetentionData_n", size, "_imbalance", 
+                           imbalance*100, "perc", "_clusters", n_clusters)
+    all_datasets[[dataset_name]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = TRUE,
+      sparse = TRUE, n_clusters = n_clusters, 
+      cluster_means = cluster_means_list, cluster_sds = cluster_sds_list,
+      samples_per_cluster = samples_per_cluster,
+      seed = 123)
+  }
+}
+```
+
+## Results
+
+```{r}
+devtools::load_all("/Users/lyu/Documents/BRFWRF")
+library(pbapply) 
+```
+
+```{r eval=FALSE, include=FALSE}
+# Code to fit all models
+brf_models <- list()
+wrf_models <- list()
+dataset_names <- names(all_datasets)
+
+fit_models <- function(dataset_name) {
+  data <- all_datasets[[dataset_name]]
+  if (!is.data.frame(data)) {
+    warning(paste("Dataset", dataset_name, "is not a data frame. Skipping."))
+    return(list(brf = NULL, wrf = NULL))
+  }
+  brf_fit <- brf(data = data, target = "Class")
+  
+  # double the weights
+  cw <- 1 / table(data$Class)
+  cw <- cw / sum(cw) * length(cw)
+  cw["1"] <- cw["1"] * 3
+  
+  wrf_fit <- wrf(x = data[-21], y = data[[21]], class.weights = cw)
+  return(list(brf = brf_fit, wrf = wrf_fit))
+}
+
+fitted_models <- pblapply(dataset_names, fit_models)
+names(fitted_models) <- dataset_names
+brf_models <- lapply(fitted_models, function(x) x$brf)
+wrf_models <- lapply(fitted_models, function(x) x$wrf)
+names(brf_models) <- dataset_names
+names(wrf_models) <- dataset_names
+```
+
+```{r}
+library(dplyr)
+#Generate test data
+calculate_samples_per_cluster <- function(n_majority, n_clusters) {
+  if (n_clusters != 3) {
+    stop("This function is designed for n_clusters = 3")
+  }
+  proportions <- c(0.8, 0.1, 0.1)
+  samples_per_cluster <- floor(n_majority * proportions)
+  remainder <- n_majority - sum(samples_per_cluster)
+  # Distribute the remainder to the first few clusters
+  if (remainder > 0) {
+    samples_per_cluster[1:remainder] <- samples_per_cluster[1:remainder] + 1
+  }
+  return(samples_per_cluster)
+}
+
+dataset_sizes <- c(rep(200, 3))  
+imbalance_ratios <- c(0.05, 0.20, 0.3) # High, Moderate, Low imbalance
+p <- 20 # Number of features
+n_clusters <- 3 # Number of clusters in majority class for retention scenarios
+# Define cluster means and sds for consistency
+set.seed(234) # For reproducibility
+cluster_means_list <- list(c(rep(0, p)), c(rep(3, p)), c(rep(-3, p)))
+cluster_sds_list <- list(rep(1, p), rep(1, p), rep(1, p))
+# Initialize main list to store all datasets
+test_datasets <- list()
+# Generate non-sparse, non-retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    # dataset_name <- paste0("Data_n", size, "_imbalance", imbalance*100, "perc")
+    test_datasets[[length(test_datasets)+1]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = FALSE,
+      sparse = FALSE, seed = 234)
+  }
+}
+# Generate sparse, non-retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    # dataset_name <- paste0("SparseData_n", size, "_imbalance", 
+    #                        imbalance*100, "perc")
+    test_datasets[[length(test_datasets)+1]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = FALSE,
+      sparse = TRUE, seed = 234)
+  }
+}
+# Generate retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    n_majority <- size - round(size * imbalance)
+    samples_per_cluster <- calculate_samples_per_cluster(n_majority, n_clusters)
+    # dataset_name <- paste0("RetentionData_n", 
+    #                        "_imbalance", imbalance*100, "perc",
+    #                        "_clusters", n_clusters)
+    test_datasets[[length(test_datasets)+1]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = TRUE,
+      sparse = FALSE, n_clusters = n_clusters, 
+      cluster_means = cluster_means_list, cluster_sds = cluster_sds_list, 
+      samples_per_cluster = samples_per_cluster, seed = 234)
+  }
+}
+# Generate sparse retention datasets
+for (size in dataset_sizes) {
+  for (imbalance in imbalance_ratios) {
+    n_majority <- size - round(size * imbalance)
+    samples_per_cluster <- calculate_samples_per_cluster(n_majority, n_clusters)
+    # dataset_name <- paste0("SparseRetentionData_n", "_imbalance", 
+    #                        imbalance*100, "perc", "_clusters", n_clusters)
+    test_datasets[[length(test_datasets)+1]] <- generate_synthetic_data(
+      n = size, p = p, imbalance_ratio = imbalance, retain_all = TRUE,
+      sparse = TRUE, n_clusters = n_clusters, 
+      cluster_means = cluster_means_list, cluster_sds = cluster_sds_list,
+      samples_per_cluster = samples_per_cluster,
+      seed = 234)
+  }
+}
+names(test_datasets) <- names(all_datasets)
+```
+
+```{r eval=FALSE, include=FALSE}
+# Load necessary libraries for evaluation
+library(caret)
+library(pROC)
+
+brf_predictions <- list()
+wrf_predictions <- list()
+dataset_names <- names(test_datasets)
+
+make_predictions <- function(dataset_name) {
+  data <- test_datasets[[dataset_name]]
+  target_col <- "Class"  
+  if (!(target_col %in% names(data))) {
+    warning(paste("Target column", target_col, "not found in dataset:", 
+                  dataset_name))
+    return(list(brf_pred = NULL, wrf_pred = NULL))
+  }
+  # Extract predictor variables
+  predictors <- data[, setdiff(names(data), target_col)]
+  if(!is.data.frame(predictors) && !is.matrix(predictors)){
+    predictors <- as.data.frame(predictors)
+  }
+  # Retrieve the fitted models
+  brf_model <- brf_models[[dataset_name]]
+  wrf_model <- wrf_models[[dataset_name]]
+  # Initialize prediction placeholders
+  brf_pred <- NULL
+  wrf_pred <- NULL
+  # Make predictions using brf model
+  if(!is.null(brf_model)){
+    brf_pred <- tryCatch({
+      predict.BRFWRF(brf_model, newdata = predictors, type = "class")
+    }, error = function(e){
+      warning(paste("Prediction using brf model failed for dataset:", 
+                    dataset_name, ":", e$message))
+      return(NULL)
+    })
+  } else {
+    warning(paste("brf_model is NULL for dataset:", dataset_name))
+  }
+  # Make predictions using wrf model
+  if(!is.null(wrf_model)){
+    wrf_pred <- tryCatch({
+      predict.BRFWRF(wrf_model, newdata = predictors, type = "class")
+    }, error = function(e){
+      warning(paste("Prediction using wrf model failed for dataset:", 
+                    dataset_name, ":", e$message))
+      return(NULL)
+    })
+  } else {
+    warning(paste("wrf_model is NULL for dataset:", dataset_name))
+  }
+  # Return a list of predictions
+  return(list(brf_pred = brf_pred, wrf_pred = wrf_pred))
+}
+
+prediction_results <- pblapply(dataset_names, make_predictions)
+names(prediction_results) <- dataset_names
+brf_predictions <- lapply(prediction_results, function(x) x$brf_pred)
+wrf_predictions <- lapply(prediction_results, function(x) x$wrf_pred)
+names(brf_predictions) <- dataset_names
+names(wrf_predictions) <- dataset_names
+```
+
+```{r}
+evaluate_predictions <- function(dataset_name) {
+  data <- test_datasets[[dataset_name]]
+  target_col <- "Class"
+  if (!(target_col %in% names(data))) {
+    warning(paste("Target column", target_col, "not found in dataset:", 
+                  dataset_name))
+    return(NULL)
+  }
+  true_labels <- data[[target_col]]
+  brf_pred <- brf_predictions[[dataset_name]]
+  wrf_pred <- wrf_predictions[[dataset_name]]
+  if(!is.null(brf_pred)){
+    brf_pred <- factor(brf_pred, levels = levels(true_labels))
+  }
+  if(!is.null(wrf_pred)){
+    wrf_pred <- factor(wrf_pred, levels = levels(true_labels))
+  }
+  # Compute Confusion Matrix for brf
+  if(!is.null(brf_pred)){
+    cat("Confusion Matrix for brf model on dataset:", dataset_name, "\n")
+    print(confusionMatrix(brf_pred, true_labels, positive = "1"))
+  } else {
+    cat("No brf predictions available for dataset:", dataset_name, "\n")
+  }
+  # Compute Confusion Matrix for wrf
+  if(!is.null(wrf_pred)){
+    cat("Confusion Matrix for wrf model on dataset:", dataset_name, "\n")
+    print(confusionMatrix(wrf_pred, true_labels, positive = "1"))
+  } else {
+    cat("No wrf predictions available for dataset:", dataset_name, "\n")
+  }
+  # Compute ROC and AUC for brf
+  if(!is.null(brf_pred)){
+    roc_brf <- roc(as.numeric(true_labels), as.numeric(brf_pred))
+    auc_brf <- auc(roc_brf)
+    cat("AUC for brf model on dataset:", dataset_name, ":", auc_brf, "\n")
+    #plot(roc_brf, main = paste("ROC Curve - brf Model -", dataset_name))
+  }
+  # Compute ROC and AUC for wrf
+  if(!is.null(wrf_pred)){
+    roc_wrf <- roc(as.numeric(true_labels), as.numeric(wrf_pred))
+    auc_wrf <- auc(roc_wrf)
+    cat("AUC for wrf model on dataset:", dataset_name, ":", auc_wrf, "\n")
+    #plot(roc_wrf, main = paste("ROC Curve - wrf Model -", dataset_name))
+  }
+}
+```
+
+```{r}
+sink("brfwrf_output4.txt")
+# Apply the evaluation function to all datasets
+for(name in dataset_names){
+  evaluate_predictions(name)
+}
+sink()
+```
+
+
+
+
+

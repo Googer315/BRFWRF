@@ -1,0 +1,2088 @@
+Confusion Matrix for brf model on dataset: Data_n500_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n500_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n500_imbalance5perc : 1 
+AUC for wrf model on dataset: Data_n500_imbalance5perc : 1 
+Confusion Matrix for brf model on dataset: Data_n500_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n500_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n500_imbalance20perc : 1 
+AUC for wrf model on dataset: Data_n500_imbalance20perc : 1 
+Confusion Matrix for brf model on dataset: Data_n500_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n500_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n500_imbalance40perc : 1 
+AUC for wrf model on dataset: Data_n500_imbalance40perc : 1 
+Confusion Matrix for brf model on dataset: Data_n1000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n1000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n1000_imbalance5perc : 1 
+AUC for wrf model on dataset: Data_n1000_imbalance5perc : 1 
+Confusion Matrix for brf model on dataset: Data_n1000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n1000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n1000_imbalance20perc : 1 
+AUC for wrf model on dataset: Data_n1000_imbalance20perc : 1 
+Confusion Matrix for brf model on dataset: Data_n1000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n1000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n1000_imbalance40perc : 1 
+AUC for wrf model on dataset: Data_n1000_imbalance40perc : 1 
+Confusion Matrix for brf model on dataset: Data_n5000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n5000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   0
+         1   0  10
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.95       
+    P-Value [Acc > NIR] : 3.505e-05  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.00       
+            Specificity : 1.00       
+         Pos Pred Value : 1.00       
+         Neg Pred Value : 1.00       
+             Prevalence : 0.05       
+         Detection Rate : 0.05       
+   Detection Prevalence : 0.05       
+      Balanced Accuracy : 1.00       
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n5000_imbalance5perc : 1 
+AUC for wrf model on dataset: Data_n5000_imbalance5perc : 1 
+Confusion Matrix for brf model on dataset: Data_n5000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n5000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160   0
+         1   0  40
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.8        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.2        
+         Detection Rate : 0.2        
+   Detection Prevalence : 0.2        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n5000_imbalance20perc : 1 
+AUC for wrf model on dataset: Data_n5000_imbalance20perc : 1 
+Confusion Matrix for brf model on dataset: Data_n5000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+Confusion Matrix for wrf model on dataset: Data_n5000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 140   0
+         1   0  60
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9817, 1)
+    No Information Rate : 0.7        
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0        
+            Specificity : 1.0        
+         Pos Pred Value : 1.0        
+         Neg Pred Value : 1.0        
+             Prevalence : 0.3        
+         Detection Rate : 0.3        
+   Detection Prevalence : 0.3        
+      Balanced Accuracy : 1.0        
+                                     
+       'Positive' Class : 1          
+                                     
+AUC for brf model on dataset: Data_n5000_imbalance40perc : 1 
+AUC for wrf model on dataset: Data_n5000_imbalance40perc : 1 
+Confusion Matrix for brf model on dataset: SparseData_n500_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 176   8
+         1  14   2
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9998          
+                                          
+                  Kappa : 0.0984          
+                                          
+ Mcnemar's Test P-Value : 0.2864          
+                                          
+            Sensitivity : 0.2000          
+            Specificity : 0.9263          
+         Pos Pred Value : 0.1250          
+         Neg Pred Value : 0.9565          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0100          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.5632          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n500_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: SparseData_n500_imbalance5perc : 0.5631579 
+AUC for wrf model on dataset: SparseData_n500_imbalance5perc : 0.5 
+Confusion Matrix for brf model on dataset: SparseData_n500_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 152   9
+         1   8  31
+                                          
+               Accuracy : 0.915           
+                 95% CI : (0.8674, 0.9497)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 6.879e-06       
+                                          
+                  Kappa : 0.7319          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.7750          
+            Specificity : 0.9500          
+         Pos Pred Value : 0.7949          
+         Neg Pred Value : 0.9441          
+             Prevalence : 0.2000          
+         Detection Rate : 0.1550          
+   Detection Prevalence : 0.1950          
+      Balanced Accuracy : 0.8625          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n500_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 160  26
+         1   0  14
+                                          
+               Accuracy : 0.87            
+                 95% CI : (0.8153, 0.9133)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.006433        
+                                          
+                  Kappa : 0.4628          
+                                          
+ Mcnemar's Test P-Value : 9.443e-07       
+                                          
+            Sensitivity : 0.3500          
+            Specificity : 1.0000          
+         Pos Pred Value : 1.0000          
+         Neg Pred Value : 0.8602          
+             Prevalence : 0.2000          
+         Detection Rate : 0.0700          
+   Detection Prevalence : 0.0700          
+      Balanced Accuracy : 0.6750          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseData_n500_imbalance20perc : 0.8625 
+AUC for wrf model on dataset: SparseData_n500_imbalance20perc : 0.675 
+Confusion Matrix for brf model on dataset: SparseData_n500_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 127  15
+         1  13  45
+                                          
+               Accuracy : 0.86            
+                 95% CI : (0.8041, 0.9049)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 9.991e-08       
+                                          
+                  Kappa : 0.6635          
+                                          
+ Mcnemar's Test P-Value : 0.8501          
+                                          
+            Sensitivity : 0.7500          
+            Specificity : 0.9071          
+         Pos Pred Value : 0.7759          
+         Neg Pred Value : 0.8944          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2250          
+   Detection Prevalence : 0.2900          
+      Balanced Accuracy : 0.8286          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n500_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 137  19
+         1   3  41
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.315e-10       
+                                          
+                  Kappa : 0.7165          
+                                          
+ Mcnemar's Test P-Value : 0.001384        
+                                          
+            Sensitivity : 0.6833          
+            Specificity : 0.9786          
+         Pos Pred Value : 0.9318          
+         Neg Pred Value : 0.8782          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2050          
+   Detection Prevalence : 0.2200          
+      Balanced Accuracy : 0.8310          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseData_n500_imbalance40perc : 0.8285714 
+AUC for wrf model on dataset: SparseData_n500_imbalance40perc : 0.8309524 
+Confusion Matrix for brf model on dataset: SparseData_n1000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 177   4
+         1  13   6
+                                          
+               Accuracy : 0.915           
+                 95% CI : (0.8674, 0.9497)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.98791         
+                                          
+                  Kappa : 0.3727          
+                                          
+ Mcnemar's Test P-Value : 0.05235         
+                                          
+            Sensitivity : 0.6000          
+            Specificity : 0.9316          
+         Pos Pred Value : 0.3158          
+         Neg Pred Value : 0.9779          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0300          
+   Detection Prevalence : 0.0950          
+      Balanced Accuracy : 0.7658          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n1000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: SparseData_n1000_imbalance5perc : 0.7657895 
+AUC for wrf model on dataset: SparseData_n1000_imbalance5perc : 0.5 
+Confusion Matrix for brf model on dataset: SparseData_n1000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 152  13
+         1   8  27
+                                         
+               Accuracy : 0.895          
+                 95% CI : (0.844, 0.9338)
+    No Information Rate : 0.8            
+    P-Value [Acc > NIR] : 0.0002364      
+                                         
+                  Kappa : 0.6557         
+                                         
+ Mcnemar's Test P-Value : 0.3827331      
+                                         
+            Sensitivity : 0.6750         
+            Specificity : 0.9500         
+         Pos Pred Value : 0.7714         
+         Neg Pred Value : 0.9212         
+             Prevalence : 0.2000         
+         Detection Rate : 0.1350         
+   Detection Prevalence : 0.1750         
+      Balanced Accuracy : 0.8125         
+                                         
+       'Positive' Class : 1              
+                                         
+Confusion Matrix for wrf model on dataset: SparseData_n1000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 158  19
+         1   2  21
+                                         
+               Accuracy : 0.895          
+                 95% CI : (0.844, 0.9338)
+    No Information Rate : 0.8            
+    P-Value [Acc > NIR] : 0.0002364      
+                                         
+                  Kappa : 0.6097         
+                                         
+ Mcnemar's Test P-Value : 0.0004803      
+                                         
+            Sensitivity : 0.5250         
+            Specificity : 0.9875         
+         Pos Pred Value : 0.9130         
+         Neg Pred Value : 0.8927         
+             Prevalence : 0.2000         
+         Detection Rate : 0.1050         
+   Detection Prevalence : 0.1150         
+      Balanced Accuracy : 0.7563         
+                                         
+       'Positive' Class : 1              
+                                         
+AUC for brf model on dataset: SparseData_n1000_imbalance20perc : 0.8125 
+AUC for wrf model on dataset: SparseData_n1000_imbalance20perc : 0.75625 
+Confusion Matrix for brf model on dataset: SparseData_n1000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 127  12
+         1  13  48
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.7            
+    P-Value [Acc > NIR] : 4.424e-09      
+                                         
+                  Kappa : 0.7038         
+                                         
+ Mcnemar's Test P-Value : 1              
+                                         
+            Sensitivity : 0.8000         
+            Specificity : 0.9071         
+         Pos Pred Value : 0.7869         
+         Neg Pred Value : 0.9137         
+             Prevalence : 0.3000         
+         Detection Rate : 0.2400         
+   Detection Prevalence : 0.3050         
+      Balanced Accuracy : 0.8536         
+                                         
+       'Positive' Class : 1              
+                                         
+Confusion Matrix for wrf model on dataset: SparseData_n1000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 131  13
+         1   9  47
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.315e-10       
+                                          
+                  Kappa : 0.733           
+                                          
+ Mcnemar's Test P-Value : 0.5224          
+                                          
+            Sensitivity : 0.7833          
+            Specificity : 0.9357          
+         Pos Pred Value : 0.8393          
+         Neg Pred Value : 0.9097          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2350          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.8595          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseData_n1000_imbalance40perc : 0.8535714 
+AUC for wrf model on dataset: SparseData_n1000_imbalance40perc : 0.8595238 
+Confusion Matrix for brf model on dataset: SparseData_n5000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 179   5
+         1  11   5
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9762          
+                                          
+                  Kappa : 0.3443          
+                                          
+ Mcnemar's Test P-Value : 0.2113          
+                                          
+            Sensitivity : 0.5000          
+            Specificity : 0.9421          
+         Pos Pred Value : 0.3125          
+         Neg Pred Value : 0.9728          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0250          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.7211          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n5000_imbalance5perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: SparseData_n5000_imbalance5perc : 0.7210526 
+AUC for wrf model on dataset: SparseData_n5000_imbalance5perc : 0.5 
+Confusion Matrix for brf model on dataset: SparseData_n5000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 142   7
+         1  18  33
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.8            
+    P-Value [Acc > NIR] : 0.003629       
+                                         
+                  Kappa : 0.6459         
+                                         
+ Mcnemar's Test P-Value : 0.045500       
+                                         
+            Sensitivity : 0.8250         
+            Specificity : 0.8875         
+         Pos Pred Value : 0.6471         
+         Neg Pred Value : 0.9530         
+             Prevalence : 0.2000         
+         Detection Rate : 0.1650         
+   Detection Prevalence : 0.2550         
+      Balanced Accuracy : 0.8562         
+                                         
+       'Positive' Class : 1              
+                                         
+Confusion Matrix for wrf model on dataset: SparseData_n5000_imbalance20perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 156  22
+         1   4  18
+                                          
+               Accuracy : 0.87            
+                 95% CI : (0.8153, 0.9133)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.0064329       
+                                          
+                  Kappa : 0.5113          
+                                          
+ Mcnemar's Test P-Value : 0.0008561       
+                                          
+            Sensitivity : 0.4500          
+            Specificity : 0.9750          
+         Pos Pred Value : 0.8182          
+         Neg Pred Value : 0.8764          
+             Prevalence : 0.2000          
+         Detection Rate : 0.0900          
+   Detection Prevalence : 0.1100          
+      Balanced Accuracy : 0.7125          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseData_n5000_imbalance20perc : 0.85625 
+AUC for wrf model on dataset: SparseData_n5000_imbalance20perc : 0.7125 
+Confusion Matrix for brf model on dataset: SparseData_n5000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 129  17
+         1  11  43
+                                          
+               Accuracy : 0.86            
+                 95% CI : (0.8041, 0.9049)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 9.991e-08       
+                                          
+                  Kappa : 0.6569          
+                                          
+ Mcnemar's Test P-Value : 0.3447          
+                                          
+            Sensitivity : 0.7167          
+            Specificity : 0.9214          
+         Pos Pred Value : 0.7963          
+         Neg Pred Value : 0.8836          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2150          
+   Detection Prevalence : 0.2700          
+      Balanced Accuracy : 0.8190          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseData_n5000_imbalance40perc 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 134  15
+         1   6  45
+                                         
+               Accuracy : 0.895          
+                 95% CI : (0.844, 0.9338)
+    No Information Rate : 0.7            
+    P-Value [Acc > NIR] : 3.698e-11      
+                                         
+                  Kappa : 0.7388         
+                                         
+ Mcnemar's Test P-Value : 0.08086        
+                                         
+            Sensitivity : 0.7500         
+            Specificity : 0.9571         
+         Pos Pred Value : 0.8824         
+         Neg Pred Value : 0.8993         
+             Prevalence : 0.3000         
+         Detection Rate : 0.2250         
+   Detection Prevalence : 0.2550         
+      Balanced Accuracy : 0.8536         
+                                         
+       'Positive' Class : 1              
+                                         
+AUC for brf model on dataset: SparseData_n5000_imbalance40perc : 0.8190476 
+AUC for wrf model on dataset: SparseData_n5000_imbalance40perc : 0.8535714 
+Confusion Matrix for brf model on dataset: RetentionData_n500_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 171   0
+         1  19  10
+                                          
+               Accuracy : 0.905           
+                 95% CI : (0.8556, 0.9418)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9973          
+                                          
+                  Kappa : 0.4737          
+                                          
+ Mcnemar's Test P-Value : 3.636e-05       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.3448          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0500          
+   Detection Prevalence : 0.1450          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n500_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 189  10
+         1   1   0
+                                          
+               Accuracy : 0.945           
+                 95% CI : (0.9037, 0.9722)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.69976         
+                                          
+                  Kappa : -0.0092         
+                                          
+ Mcnemar's Test P-Value : 0.01586         
+                                          
+            Sensitivity : 0.0000          
+            Specificity : 0.9947          
+         Pos Pred Value : 0.0000          
+         Neg Pred Value : 0.9497          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0000          
+   Detection Prevalence : 0.0050          
+      Balanced Accuracy : 0.4974          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n500_imbalance5perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n500_imbalance5perc_clusters3 : 0.4973684 
+Confusion Matrix for brf model on dataset: RetentionData_n500_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   0
+         1  16  40
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 2.457e-06       
+                                          
+                  Kappa : 0.7826          
+                                          
+ Mcnemar's Test P-Value : 0.0001768       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.2000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n500_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   0
+         1  16  40
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 2.457e-06       
+                                          
+                  Kappa : 0.7826          
+                                          
+ Mcnemar's Test P-Value : 0.0001768       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.2000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n500_imbalance20perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n500_imbalance20perc_clusters3 : 0.95 
+Confusion Matrix for brf model on dataset: RetentionData_n500_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   0
+         1  14  60
+                                          
+               Accuracy : 0.93            
+                 95% CI : (0.8853, 0.9612)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.051e-15       
+                                          
+                  Kappa : 0.8438          
+                                          
+ Mcnemar's Test P-Value : 0.000512        
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8108          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.3000          
+         Detection Rate : 0.3000          
+   Detection Prevalence : 0.3700          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n500_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   0
+         1  14  60
+                                          
+               Accuracy : 0.93            
+                 95% CI : (0.8853, 0.9612)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.051e-15       
+                                          
+                  Kappa : 0.8438          
+                                          
+ Mcnemar's Test P-Value : 0.000512        
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8108          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.3000          
+         Detection Rate : 0.3000          
+   Detection Prevalence : 0.3700          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n500_imbalance40perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n500_imbalance40perc_clusters3 : 0.95 
+Confusion Matrix for brf model on dataset: RetentionData_n1000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 171   0
+         1  19  10
+                                          
+               Accuracy : 0.905           
+                 95% CI : (0.8556, 0.9418)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9973          
+                                          
+                  Kappa : 0.4737          
+                                          
+ Mcnemar's Test P-Value : 3.636e-05       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.3448          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0500          
+   Detection Prevalence : 0.1450          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n1000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: RetentionData_n1000_imbalance5perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n1000_imbalance5perc_clusters3 : 0.5 
+Confusion Matrix for brf model on dataset: RetentionData_n1000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   0
+         1  16  40
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 2.457e-06       
+                                          
+                  Kappa : 0.7826          
+                                          
+ Mcnemar's Test P-Value : 0.0001768       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.2000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n1000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   0
+         1  16  40
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 2.457e-06       
+                                          
+                  Kappa : 0.7826          
+                                          
+ Mcnemar's Test P-Value : 0.0001768       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.2000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n1000_imbalance20perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n1000_imbalance20perc_clusters3 : 0.95 
+Confusion Matrix for brf model on dataset: RetentionData_n1000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   1
+         1  14  59
+                                          
+               Accuracy : 0.925           
+                 95% CI : (0.8793, 0.9574)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 5.677e-15       
+                                          
+                  Kappa : 0.8318          
+                                          
+ Mcnemar's Test P-Value : 0.001946        
+                                          
+            Sensitivity : 0.9833          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8082          
+         Neg Pred Value : 0.9921          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2950          
+   Detection Prevalence : 0.3650          
+      Balanced Accuracy : 0.9417          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n1000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   0
+         1  14  60
+                                          
+               Accuracy : 0.93            
+                 95% CI : (0.8853, 0.9612)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.051e-15       
+                                          
+                  Kappa : 0.8438          
+                                          
+ Mcnemar's Test P-Value : 0.000512        
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8108          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.3000          
+         Detection Rate : 0.3000          
+   Detection Prevalence : 0.3700          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n1000_imbalance40perc_clusters3 : 0.9416667 
+AUC for wrf model on dataset: RetentionData_n1000_imbalance40perc_clusters3 : 0.95 
+Confusion Matrix for brf model on dataset: RetentionData_n5000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 171   0
+         1  19  10
+                                          
+               Accuracy : 0.905           
+                 95% CI : (0.8556, 0.9418)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9973          
+                                          
+                  Kappa : 0.4737          
+                                          
+ Mcnemar's Test P-Value : 3.636e-05       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.3448          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0500          
+   Detection Prevalence : 0.1450          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n5000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   8
+         1   0   2
+                                          
+               Accuracy : 0.96            
+                 95% CI : (0.9227, 0.9826)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.32702         
+                                          
+                  Kappa : 0.322           
+                                          
+ Mcnemar's Test P-Value : 0.01333         
+                                          
+            Sensitivity : 0.2000          
+            Specificity : 1.0000          
+         Pos Pred Value : 1.0000          
+         Neg Pred Value : 0.9596          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0100          
+   Detection Prevalence : 0.0100          
+      Balanced Accuracy : 0.6000          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n5000_imbalance5perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n5000_imbalance5perc_clusters3 : 0.6 
+Confusion Matrix for brf model on dataset: RetentionData_n5000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   0
+         1  16  40
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 2.457e-06       
+                                          
+                  Kappa : 0.7826          
+                                          
+ Mcnemar's Test P-Value : 0.0001768       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.2000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2800          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n5000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   1
+         1  16  39
+                                          
+               Accuracy : 0.915           
+                 95% CI : (0.8674, 0.9497)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 6.879e-06       
+                                          
+                  Kappa : 0.7671          
+                                          
+ Mcnemar's Test P-Value : 0.000685        
+                                          
+            Sensitivity : 0.9750          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7091          
+         Neg Pred Value : 0.9931          
+             Prevalence : 0.2000          
+         Detection Rate : 0.1950          
+   Detection Prevalence : 0.2750          
+      Balanced Accuracy : 0.9375          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n5000_imbalance20perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n5000_imbalance20perc_clusters3 : 0.9375 
+Confusion Matrix for brf model on dataset: RetentionData_n5000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   0
+         1  14  60
+                                          
+               Accuracy : 0.93            
+                 95% CI : (0.8853, 0.9612)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.051e-15       
+                                          
+                  Kappa : 0.8438          
+                                          
+ Mcnemar's Test P-Value : 0.000512        
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8108          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.3000          
+         Detection Rate : 0.3000          
+   Detection Prevalence : 0.3700          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: RetentionData_n5000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126   0
+         1  14  60
+                                          
+               Accuracy : 0.93            
+                 95% CI : (0.8853, 0.9612)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.051e-15       
+                                          
+                  Kappa : 0.8438          
+                                          
+ Mcnemar's Test P-Value : 0.000512        
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.8108          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.3000          
+         Detection Rate : 0.3000          
+   Detection Prevalence : 0.3700          
+      Balanced Accuracy : 0.9500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: RetentionData_n5000_imbalance40perc_clusters3 : 0.95 
+AUC for wrf model on dataset: RetentionData_n5000_imbalance40perc_clusters3 : 0.95 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n500_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 180   8
+         1  10   2
+                                          
+               Accuracy : 0.91            
+                 95% CI : (0.8615, 0.9458)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9942          
+                                          
+                  Kappa : 0.1346          
+                                          
+ Mcnemar's Test P-Value : 0.8137          
+                                          
+            Sensitivity : 0.2000          
+            Specificity : 0.9474          
+         Pos Pred Value : 0.1667          
+         Neg Pred Value : 0.9574          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0100          
+   Detection Prevalence : 0.0600          
+      Balanced Accuracy : 0.5737          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n500_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: SparseRetentionData_n500_imbalance5perc_clusters3 : 0.5736842 
+AUC for wrf model on dataset: SparseRetentionData_n500_imbalance5perc_clusters3 : 0.5 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n500_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 144   9
+         1  16  31
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.8            
+    P-Value [Acc > NIR] : 0.003629       
+                                         
+                  Kappa : 0.6334         
+                                         
+ Mcnemar's Test P-Value : 0.230139       
+                                         
+            Sensitivity : 0.7750         
+            Specificity : 0.9000         
+         Pos Pred Value : 0.6596         
+         Neg Pred Value : 0.9412         
+             Prevalence : 0.2000         
+         Detection Rate : 0.1550         
+   Detection Prevalence : 0.2350         
+      Balanced Accuracy : 0.8375         
+                                         
+       'Positive' Class : 1              
+                                         
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n500_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 156  25
+         1   4  15
+                                          
+               Accuracy : 0.855           
+                 95% CI : (0.7984, 0.9007)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.0282766       
+                                          
+                  Kappa : 0.4358          
+                                          
+ Mcnemar's Test P-Value : 0.0002041       
+                                          
+            Sensitivity : 0.3750          
+            Specificity : 0.9750          
+         Pos Pred Value : 0.7895          
+         Neg Pred Value : 0.8619          
+             Prevalence : 0.2000          
+         Detection Rate : 0.0750          
+   Detection Prevalence : 0.0950          
+      Balanced Accuracy : 0.6750          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n500_imbalance20perc_clusters3 : 0.8375 
+AUC for wrf model on dataset: SparseRetentionData_n500_imbalance20perc_clusters3 : 0.675 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n500_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 124  16
+         1  16  44
+                                          
+               Accuracy : 0.84            
+                 95% CI : (0.7817, 0.8879)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 3.655e-06       
+                                          
+                  Kappa : 0.619           
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.7333          
+            Specificity : 0.8857          
+         Pos Pred Value : 0.7333          
+         Neg Pred Value : 0.8857          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2200          
+   Detection Prevalence : 0.3000          
+      Balanced Accuracy : 0.8095          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n500_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 129  20
+         1  11  40
+                                          
+               Accuracy : 0.845           
+                 95% CI : (0.7873, 0.8922)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.572e-06       
+                                          
+                  Kappa : 0.6144          
+                                          
+ Mcnemar's Test P-Value : 0.1508          
+                                          
+            Sensitivity : 0.6667          
+            Specificity : 0.9214          
+         Pos Pred Value : 0.7843          
+         Neg Pred Value : 0.8658          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2000          
+   Detection Prevalence : 0.2550          
+      Balanced Accuracy : 0.7940          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n500_imbalance40perc_clusters3 : 0.8095238 
+AUC for wrf model on dataset: SparseRetentionData_n500_imbalance40perc_clusters3 : 0.7940476 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n1000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 179   5
+         1  11   5
+                                          
+               Accuracy : 0.92            
+                 95% CI : (0.8733, 0.9536)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9762          
+                                          
+                  Kappa : 0.3443          
+                                          
+ Mcnemar's Test P-Value : 0.2113          
+                                          
+            Sensitivity : 0.5000          
+            Specificity : 0.9421          
+         Pos Pred Value : 0.3125          
+         Neg Pred Value : 0.9728          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0250          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.7211          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n1000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190   9
+         1   0   1
+                                          
+               Accuracy : 0.955           
+                 95% CI : (0.9163, 0.9792)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.454710        
+                                          
+                  Kappa : 0.1743          
+                                          
+ Mcnemar's Test P-Value : 0.007661        
+                                          
+            Sensitivity : 0.1000          
+            Specificity : 1.0000          
+         Pos Pred Value : 1.0000          
+         Neg Pred Value : 0.9548          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0050          
+   Detection Prevalence : 0.0050          
+      Balanced Accuracy : 0.5500          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n1000_imbalance5perc_clusters3 : 0.7210526 
+AUC for wrf model on dataset: SparseRetentionData_n1000_imbalance5perc_clusters3 : 0.55 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n1000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 148  10
+         1  12  30
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.0005019       
+                                          
+                  Kappa : 0.6626          
+                                          
+ Mcnemar's Test P-Value : 0.8311704       
+                                          
+            Sensitivity : 0.7500          
+            Specificity : 0.9250          
+         Pos Pred Value : 0.7143          
+         Neg Pred Value : 0.9367          
+             Prevalence : 0.2000          
+         Detection Rate : 0.1500          
+   Detection Prevalence : 0.2100          
+      Balanced Accuracy : 0.8375          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n1000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 157  20
+         1   3  20
+                                          
+               Accuracy : 0.885           
+                 95% CI : (0.8325, 0.9257)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.0010154       
+                                          
+                  Kappa : 0.5725          
+                                          
+ Mcnemar's Test P-Value : 0.0008492       
+                                          
+            Sensitivity : 0.5000          
+            Specificity : 0.9812          
+         Pos Pred Value : 0.8696          
+         Neg Pred Value : 0.8870          
+             Prevalence : 0.2000          
+         Detection Rate : 0.1000          
+   Detection Prevalence : 0.1150          
+      Balanced Accuracy : 0.7406          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n1000_imbalance20perc_clusters3 : 0.8375 
+AUC for wrf model on dataset: SparseRetentionData_n1000_imbalance20perc_clusters3 : 0.740625 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n1000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126  13
+         1  14  47
+                                          
+               Accuracy : 0.865           
+                 95% CI : (0.8097, 0.9091)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 3.686e-08       
+                                          
+                  Kappa : 0.6801          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.7833          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7705          
+         Neg Pred Value : 0.9065          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2350          
+   Detection Prevalence : 0.3050          
+      Balanced Accuracy : 0.8417          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n1000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 126  15
+         1  14  45
+                                          
+               Accuracy : 0.855           
+                 95% CI : (0.7984, 0.9007)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 2.602e-07       
+                                          
+                  Kappa : 0.6531          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.7500          
+            Specificity : 0.9000          
+         Pos Pred Value : 0.7627          
+         Neg Pred Value : 0.8936          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2250          
+   Detection Prevalence : 0.2950          
+      Balanced Accuracy : 0.8250          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n1000_imbalance40perc_clusters3 : 0.8416667 
+AUC for wrf model on dataset: SparseRetentionData_n1000_imbalance40perc_clusters3 : 0.825 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n5000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 178   6
+         1  12   4
+                                          
+               Accuracy : 0.91            
+                 95% CI : (0.8615, 0.9458)
+    No Information Rate : 0.95            
+    P-Value [Acc > NIR] : 0.9942          
+                                          
+                  Kappa : 0.2623          
+                                          
+ Mcnemar's Test P-Value : 0.2386          
+                                          
+            Sensitivity : 0.4000          
+            Specificity : 0.9368          
+         Pos Pred Value : 0.2500          
+         Neg Pred Value : 0.9674          
+             Prevalence : 0.0500          
+         Detection Rate : 0.0200          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.6684          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n5000_imbalance5perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 190  10
+         1   0   0
+                                        
+               Accuracy : 0.95          
+                 95% CI : (0.91, 0.9758)
+    No Information Rate : 0.95          
+    P-Value [Acc > NIR] : 0.583067      
+                                        
+                  Kappa : 0             
+                                        
+ Mcnemar's Test P-Value : 0.004427      
+                                        
+            Sensitivity : 0.00          
+            Specificity : 1.00          
+         Pos Pred Value :  NaN          
+         Neg Pred Value : 0.95          
+             Prevalence : 0.05          
+         Detection Rate : 0.00          
+   Detection Prevalence : 0.00          
+      Balanced Accuracy : 0.50          
+                                        
+       'Positive' Class : 1             
+                                        
+AUC for brf model on dataset: SparseRetentionData_n5000_imbalance5perc_clusters3 : 0.6684211 
+AUC for wrf model on dataset: SparseRetentionData_n5000_imbalance5perc_clusters3 : 0.5 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n5000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 146   8
+         1  14  32
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.8             
+    P-Value [Acc > NIR] : 0.0005019       
+                                          
+                  Kappa : 0.6746          
+                                          
+ Mcnemar's Test P-Value : 0.2864220       
+                                          
+            Sensitivity : 0.8000          
+            Specificity : 0.9125          
+         Pos Pred Value : 0.6957          
+         Neg Pred Value : 0.9481          
+             Prevalence : 0.2000          
+         Detection Rate : 0.1600          
+   Detection Prevalence : 0.2300          
+      Balanced Accuracy : 0.8562          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n5000_imbalance20perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 159  20
+         1   1  20
+                                         
+               Accuracy : 0.895          
+                 95% CI : (0.844, 0.9338)
+    No Information Rate : 0.8            
+    P-Value [Acc > NIR] : 0.0002364      
+                                         
+                  Kappa : 0.6008         
+                                         
+ Mcnemar's Test P-Value : 8.568e-05      
+                                         
+            Sensitivity : 0.5000         
+            Specificity : 0.9938         
+         Pos Pred Value : 0.9524         
+         Neg Pred Value : 0.8883         
+             Prevalence : 0.2000         
+         Detection Rate : 0.1000         
+   Detection Prevalence : 0.1050         
+      Balanced Accuracy : 0.7469         
+                                         
+       'Positive' Class : 1              
+                                         
+AUC for brf model on dataset: SparseRetentionData_n5000_imbalance20perc_clusters3 : 0.85625 
+AUC for wrf model on dataset: SparseRetentionData_n5000_imbalance20perc_clusters3 : 0.746875 
+Confusion Matrix for brf model on dataset: SparseRetentionData_n5000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 127  15
+         1  13  45
+                                          
+               Accuracy : 0.86            
+                 95% CI : (0.8041, 0.9049)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 9.991e-08       
+                                          
+                  Kappa : 0.6635          
+                                          
+ Mcnemar's Test P-Value : 0.8501          
+                                          
+            Sensitivity : 0.7500          
+            Specificity : 0.9071          
+         Pos Pred Value : 0.7759          
+         Neg Pred Value : 0.8944          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2250          
+   Detection Prevalence : 0.2900          
+      Balanced Accuracy : 0.8286          
+                                          
+       'Positive' Class : 1               
+                                          
+Confusion Matrix for wrf model on dataset: SparseRetentionData_n5000_imbalance40perc_clusters3 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 130  16
+         1  10  44
+                                          
+               Accuracy : 0.87            
+                 95% CI : (0.8153, 0.9133)
+    No Information Rate : 0.7             
+    P-Value [Acc > NIR] : 1.305e-08       
+                                          
+                  Kappa : 0.6814          
+                                          
+ Mcnemar's Test P-Value : 0.3268          
+                                          
+            Sensitivity : 0.7333          
+            Specificity : 0.9286          
+         Pos Pred Value : 0.8148          
+         Neg Pred Value : 0.8904          
+             Prevalence : 0.3000          
+         Detection Rate : 0.2200          
+   Detection Prevalence : 0.2700          
+      Balanced Accuracy : 0.8310          
+                                          
+       'Positive' Class : 1               
+                                          
+AUC for brf model on dataset: SparseRetentionData_n5000_imbalance40perc_clusters3 : 0.8285714 
+AUC for wrf model on dataset: SparseRetentionData_n5000_imbalance40perc_clusters3 : 0.8309524 
